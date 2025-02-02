@@ -135,6 +135,16 @@ snmp-server group MyGroup v3 priv
 snmp-server user MyUser MyGroup v3 auth sha MyAuthPassword priv aes 128 MyPrivPassword
 ```
 
+#### Breakdown of the Command:
+- `group MyGroup v3 priv` → Creates an SNMPv3 group with **privacy (encryption)**.
+- `user MyUser MyGroup v3 auth sha MyAuthPassword priv aes 128 MyPrivPassword`  
+    → Adds a user with **SHA authentication** and **AES-128 encryption**.
+
+#### Why This Matters?
+- **SNMPv1 & v2c** transmit data in **plain text** (easily intercepted).
+- **SNMPv3** ensures **confidentiality, integrity, and authentication**.
+- If **SNMP isn't required**, disabling it reduces attack surface.
+
 ---
 
 ## Using Firewalls and Intrusion Prevention Systems (IPS)
@@ -194,10 +204,56 @@ Access control is essential for restricting unauthorized access to network devic
 
 RBAC allows you to define user roles and restrict access to specific device functions.
 
+Cisco IOS has **16 privilege levels (0-15)** to control user access:
+
+|**Level**|**Access**|
+|---|---|
+|**0**|Minimal commands (`disable`, `enable`, `exit`, `logout`)|
+|**1**|Basic User EXEC mode (view-only commands, no changes)|
+|**2-14**|Customizable (assign specific commands for role-based access)|
+|**15**|Full administrative access (all commands, configuration changes)|
+
 **Example in Packet Tracer:**
 ```bash
-username admin privilege 15 secret MyAdminPassword
-username guest privilege 1 secret MyGuestPassword
+username admin privilege 15 secret MyAdminPassword # Full admin access
+username guest privilege 1 secret MyGuestPassword # View-only access
+```
+
+#### Custom Privilege Level 5 Example
+```bash
+enable secret level 5 MyLevel5Password
+username junior privilege 5 secret MyJuniorPassword
+privilege exec level 5 show running-config
+```
+
+- **Creates** user `junior` with **privilege 5**.
+- **Allows only** `show running-config` command.
+
+**How to Log In as 'junior'**
+1. Enter **`junior`** as the username and password at login.
+2. Type **`enable 5`**, then enter **`MyLevel5Password`**.
+3. Run **`show running-config`** (other commands are restricted).
+
+#### Cisco Privilege Levels – Assignable Commands
+
+Below is a table of common commands that can be assigned to custom levels.
+
+| **Command Type**        | **Example Commands**                 | **Assignable?** (Yes/No) |
+| ----------------------- | ------------------------------------ | ------------------------ |
+| **Basic Commands**      | `show`, `ping`, `traceroute`         | ✅ Yes                    |
+| **Debugging**           | `debug`, `show running-config`       | ✅ Yes                    |
+| **Configuration Mode**  | `configure terminal`                 | ✅ Yes                    |
+| **Interface Config**    | `interface`, `ip address`            | ✅ Yes                    |
+| **Routing**             | `router ospf`, `network`             | ✅ Yes                    |
+| **VLAN & Switching**    | `vlan database`, `switchport mode`   | ✅ Yes                    |
+| **Access Control**      | `access-list`, `NAT`, `QoS`          | ✅ Yes                    |
+| **User Management**     | `username`, `enable secret`          | ✅ Yes                    |
+| **File & System Mgmt**  | `copy`, `delete`, `write memory`     | ✅ Yes                    |
+| **Full Admin Commands** | `reload`, `write erase`, `debug all` | ❌ No (Level 15 Only)     |
+
+Example: Assign "show running-config" to Level 5
+```bash
+privilege exec level 5 show running-config
 ```
 
 ### 2. Use Access Control Lists (ACLs)
