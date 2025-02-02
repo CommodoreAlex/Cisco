@@ -57,6 +57,8 @@ The network will consist of:
 - 2 Switches (e.g., Cisco 2960 Series)
 - 4 PCs
 
+![1](https://github.com/user-attachments/assets/fe295ed6-dadf-4327-ae76-3af889366b56)
+
 ### Connecting the Devices:
 
 **Router to Switches**:
