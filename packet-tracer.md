@@ -162,6 +162,8 @@ If you want to simulate routing, use **RIP** (Routing Information Protocol):
 
 Enable RIP on the router:
 ```bash
+enable
+configure terminal
 router rip
 version 2
 network 192.168.10.0
