@@ -134,6 +134,8 @@ Here you can easily configure the networking information for each PC (endpoint/h
 
 On the router, create sub-interfaces for each VLAN and assign IP addresses:
 ```bash
+enable
+configure terminal
 interface gig0/0.10
 encapsulation dot1Q 10
 ip address 192.168.10.1 255.255.255.0
