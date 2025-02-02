@@ -183,12 +183,16 @@ You can apply an ACL to restrict communication between the Finance and HR depart
 
 Create an ACL to block communication from Finance (VLAN 10) to HR (VLAN 20):
 ```bash
+enable
+configure terminal
 access-list 100 deny ip 192.168.10.0 0.0.0.255 192.168.20.0 0.0.0.255
 access-list 100 permit ip any any
 ```
 
 Apply the ACL to the router interface connecting to Switch 1 (Finance):
 ```bash
+enable
+configure terminal
 interface gig0/0.10
 ip access-group 100 in
 exit
@@ -202,6 +206,8 @@ exit
 
 Configure the router to use SSH for remote management:
 ```bash
+enable
+configure terminal
 ip domain-name mynetwork.com
 crypto key generate rsa
 username admin privilege 15 secret mypassword
@@ -221,6 +227,8 @@ Configure the switches to only allow SSH for management access.
 
 Use **TFTP** to back up configurations from the router and switches:
 ```bash
+enable
+configure terminal
 copy running-config tftp:
 ```
 
@@ -230,6 +238,8 @@ Store backups in a remote server to ensure quick recovery if needed.
 
 If configurations are lost, restore them from the TFTP server:
 ```bash
+enable
+configure terminal
 copy tftp: running-config
 ```
 
