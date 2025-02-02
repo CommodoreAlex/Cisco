@@ -84,6 +84,8 @@ On each switch, create VLANs and assign ports.
 
 On **Switch 1** (Finance):
 ```bash
+enable
+configure terminal
 vlan 10
 name Finance
 exit
@@ -95,6 +97,8 @@ exit
 
 On **Switch 2** (HR):
 ```bash
+enable
+configure terminal
 vlan 20
 name HR
 exit
