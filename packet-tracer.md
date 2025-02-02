@@ -86,6 +86,7 @@ On **Switch 1** (Finance):
 ```bash
 enable
 configure terminal
+hostname FINANCE-SWITCH
 vlan 10
 name Finance
 exit
@@ -99,6 +100,7 @@ On **Switch 2** (HR):
 ```bash
 enable
 configure terminal
+hostname HR-SWITCH
 vlan 20
 name HR
 exit
