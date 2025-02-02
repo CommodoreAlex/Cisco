@@ -195,6 +195,36 @@ show ip ssh
 - **Disable Telnet** and use only **SSH** for secure remote access.
 - Ensure **SSH version 2** is enabled for enhanced security.
 
+To disable Telnet on a switch or router in Packet Tracer, you can follow these steps:
+
+### 3.0 Disabling Telnet Access
+
+Enter global configuration mode:
+```bash
+Switch> enable
+Switch# configure terminal
+```
+
+Disable Telnet by disabling the VTY (Virtual Terminal) lines:
+```bash
+Switch(config)# no transport input telnet
+```
+
+(Optional) You can also secure the VTY lines by requiring a password:
+```bash
+Switch(config)# line vty 0 15
+Switch(config-line)# password yourpassword
+Switch(config-line)# login
+```
+
+Exit configuration mode:
+```bash
+Switch(config-line)# exit
+Switch(config)# exit
+```
+
+Now Telnet will be disabled for all remote access to the device.
+
 ---
 
 ## 3. Saving and Managing Configurations
