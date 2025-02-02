@@ -152,11 +152,11 @@ Backup methods are explained in [BACKUP_RECOVERY.md](backup-recovery.md).
 
 To reinforce Cisco networking concepts, this project guides you through building a functional network in Cisco Packet Tracer:
 
-Setting up a network topology with routers, switches, and end devices
-Configuring VLANs, routing protocols, and ACLs for security and traffic control
-Implementing SSH and AAA authentication for secure device management
-Using troubleshooting commands to diagnose and fix network issues
-Saving and restoring configurations to ensure network resilience
+- Setting up a network topology with routers, switches, and end devices
+Configuring VLANs, routing protocols, and ACLs for security and traffic control.
+- Implementing SSH and AAA authentication for secure device management
+- Using troubleshooting commands to diagnose and fix network issues
+- Saving and restoring configurations to ensure network resilience
 
 The Packet Tracer project is explained in [Packet-Tracer.md](packet-tracer.md).
 
