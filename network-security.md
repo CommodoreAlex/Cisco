@@ -92,7 +92,11 @@ Disable Telnet and enforce SSH for secure communication.
 line vty 0 4
   transport input ssh
 ```
-
+#### Breakdown of the Command:
+- **`line vty 0 4`**  
+    This specifies that you are configuring **VTY lines 0 through 4**, which are the default virtual terminal lines used for remote access (typically allowing up to 5 concurrent sessions).
+- **`transport input ssh`**  
+    This restricts remote access to **only SSH** (Secure Shell), preventing the use of less secure protocols like Telnet. If you don't specify `ssh`, the default would allow Telnet as well.
 ### 2. Enable SSH
 
 Configure SSH for encrypted remote access. This prevents sensitive data from being transmitted in plaintext.
