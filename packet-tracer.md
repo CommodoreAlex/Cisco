@@ -120,6 +120,12 @@ Configure IP addresses on the PCs:
 - **PC3 (HR)**: IP `192.168.20.10/24`, Gateway `192.168.20.1`
 - **PC4 (HR)**: IP `192.168.20.20/24`, Gateway `192.168.20.1`
 
+You are able to navigate to 'Desktop' to see many utilities, including IP configurations:
+![5](https://github.com/user-attachments/assets/9b5193b6-1666-4889-899c-a88a15f3c8ba)
+
+Here you can easily configure the networking information for each PC (endpoint/host):
+![6](https://github.com/user-attachments/assets/9180848c-9f0c-4d56-a5f8-1ce437706d89)
+
 ---
 
 ## Step 3: Inter-VLAN Routing
