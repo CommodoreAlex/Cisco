@@ -76,7 +76,7 @@ Change the display names of the devices by clicking on them and navigating to th
 **PC to Router for Management** (optional):
 - To manage the router, connect a PC to the router’s Ethernet port using an **Ethernet cable**. This is useful if you want to directly configure the router from a PC in the network.
 
-![2](https://github.com/user-attachments/assets/bc407bc1-b6ef-4779-8679-82fe62afc43e)
+![4](https://github.com/user-attachments/assets/37fa6f21-eb7c-4a92-9309-9711b8026c32)
 
 ---
 
