@@ -76,6 +76,8 @@ show ip route
 
 ### 1.3 Configuring Dynamic Routing (OSPF Example)
 
+OSPF (Open Shortest Path First) is a link-state routing protocol used to find the best path for data transmission within an IP network by exchanging routing information between routers.
+
 For larger networks, dynamic routing is preferred:
 ```bash
 configure terminal
@@ -149,6 +151,8 @@ show interfaces GigabitEthernet0/1 switchport
 - Ensure inter-VLAN routing is enabled via a **Layer 3 device (Router-on-a-Stick or L3 switch).**
 
 ### 2.4 Configuring Trunk Ports
+
+A trunk port is a network port that carries traffic for multiple VLANs, allowing the switch to transmit data for different VLANs over a single link.
 
 To allow VLAN traffic between switches:
 ```bash
