@@ -63,6 +63,8 @@ By default, VLANs cannot communicate with each other. To enable communication, *
 
 ### Using a Router (Router-on-a-Stick)
 
+Router-on-a-stick is a method of inter-VLAN routing where a single router interface is configured with subinterfaces for each VLAN, using 802.1Q encapsulation to separate traffic.
+
 ```bash
 Router> enable
 Router# configure terminal
@@ -78,6 +80,8 @@ Router(config-subif)# exit
 ```
 
 ### Using a Layer 3 Switch
+
+Layer 3 refers to the network layer of the OSI model, which is responsible for routing between VLANs, either by a router or a Layer 3 switch.
 
 ```bash
 Switch(config)# ip routing
