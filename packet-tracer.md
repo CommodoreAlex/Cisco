@@ -249,6 +249,12 @@ copy tftp: running-config
 
 ### Using Troubleshooting Commands
 
+You can navigate back to the desktop area to use a command prompt on the PCs:
+![1](https://github.com/user-attachments/assets/d3d85fdd-cdcc-41e7-b7ca-12e18a3c8173)
+
+When you're in the CMD prompt you can issue commands:
+![2](https://github.com/user-attachments/assets/16ed9ffc-ffff-4005-af58-6ff9af7b49ed)
+
 **Ping** devices to test connectivity between VLANs:
 ```bash
 ping 192.168.10.10  # Test from HR PC to Finance PC
