@@ -144,6 +144,9 @@ hostname MyCiscoDevice
 exit
 ```
 
+Notice the hostname to the left changes to reflect your new hostname:
+![5](https://github.com/user-attachments/assets/c4606ac0-b82f-49a5-a0a2-8c4e0a67b825)
+
 ### Creating a Secure Password
 
 ```bash
