@@ -9,16 +9,17 @@ Whether you're setting up a small business network or preparing for Cisco certif
 ## Table of Contents  
 
 1. [Overview](#overview)  
-2. [Networking Basics](networking-basics.md)  
-3. [Cisco Device Setup](cisco-device-setup.md)  
-4. [Router and Switch Configuration](router-switch-config.md)  
-5. [VLANs and Subnetting](vlans-subnetting.md)  
-6. [Access Control Lists (ACLs)](access-control-lists.md)  
-7. [Routing Protocols](routing-protocols.md)  
-8. [Network Security](network-security.md)  
-9. [Monitoring and Troubleshooting](troubleshooting.md)  
-10. [Backup and Recovery](backup-recovery.md)
-11. [Packet Tracer Project](packet-tracer.md)
+2. [Networking Basics](networking-basics.md)
+4. [Cisco Device Setup](cisco-device-setup.md)  
+5. [Router and Switch Configuration](router-switch-config.md)  
+6. [VLANs and Subnetting](vlans-subnetting.md)  
+7. [Access Control Lists (ACLs)](access-control-lists.md)  
+8. [Routing Protocols](routing-protocols.md)  
+9. [Network Security](network-security.md)  
+10. [Monitoring and Troubleshooting](troubleshooting.md)  
+11. [Backup and Recovery](backup-recovery.md)
+12. [Packet Tracer Project](packet-tracer.md)
+13. [Network Topologies](topology.md)
 
 ---
 
@@ -159,5 +160,18 @@ Configuring VLANs, routing protocols, and ACLs for security and traffic control.
 - Saving and restoring configurations to ensure network resilience
 
 The Packet Tracer project is explained in [PACKET-TRACER.md](packet-tracer.md).
+
+---
+
+## Network Topologies
+
+In this section, you'll learn about the most common network topologies:
+- Bus: Single backbone; simple but limited in scalability.
+- Star: Central hub; easy to troubleshoot but dependent on the hub’s reliability.
+- Ring: Circular connection; performs well but vulnerable to disruptions.
+- Mesh: Fully interconnected; highly redundant but complex.
+- Hybrid: Combination of topologies for tailored solutions.
+
+Network Topologies are explained in [TOPOLOGY.md](topology.md).
 
 ---
