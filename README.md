@@ -158,6 +158,6 @@ Configuring VLANs, routing protocols, and ACLs for security and traffic control.
 - Using troubleshooting commands to diagnose and fix network issues
 - Saving and restoring configurations to ensure network resilience
 
-The Packet Tracer project is explained in [Packet-Tracer.md](packet-tracer.md).
+The Packet Tracer project is explained in [PACKET-TRACER.md](packet-tracer.md).
 
 ---
