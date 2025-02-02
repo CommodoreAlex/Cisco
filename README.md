@@ -8,7 +8,7 @@ Whether you're setting up a small business network or preparing for Cisco certif
 
 ## Table of Contents  
 
-1. [Overview](#-overview)  
+1. [Overview](#overview)  
 2. [Networking Basics](networking-basics.md)  
 3. [Cisco Device Setup](cisco-device-setup.md)  
 4. [Router and Switch Configuration](router-switch-config.md)  
