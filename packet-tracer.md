@@ -72,6 +72,8 @@ The network will consist of:
 **PC to Router for Management** (optional):
 - To manage the router, connect a PC to the router’s Ethernet port using an **Ethernet cable**. This is useful if you want to directly configure the router from a PC in the network.
 
+![Uploading 2.png…]()
+
 ---
 
 ## Step 2: VLAN and Subnetting Configuration
