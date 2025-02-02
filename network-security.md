@@ -256,6 +256,8 @@ Example: Assign "show running-config" to Level 5
 privilege exec level 5 show running-config
 ```
 
+---
+
 ### 2. Use Access Control Lists (ACLs)
 
 ACLs can filter network traffic and control access to resources based on defined rules.
