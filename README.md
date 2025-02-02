@@ -17,7 +17,8 @@ Whether you're setting up a small business network or preparing for Cisco certif
 7. [Routing Protocols](routing-protocols.md)  
 8. [Network Security](network-security.md)  
 9. [Monitoring and Troubleshooting](troubleshooting.md)  
-10. [Backup and Recovery](backup-recovery.md)  
+10. [Backup and Recovery](backup-recovery.md)
+11. [Packet Tracer Project](packet-tracer.md)
 
 ---
 
@@ -144,5 +145,19 @@ To prevent **network downtime**, always have a backup strategy:
 - **Recovering lost passwords**  
 
 Backup methods are explained in [BACKUP_RECOVERY.md](backup-recovery.md).  
+
+---
+
+## Packet Tracer Project
+
+To reinforce Cisco networking concepts, this project guides you through building a functional network in Cisco Packet Tracer:
+
+Setting up a network topology with routers, switches, and end devices
+Configuring VLANs, routing protocols, and ACLs for security and traffic control
+Implementing SSH and AAA authentication for secure device management
+Using troubleshooting commands to diagnose and fix network issues
+Saving and restoring configurations to ensure network resilience
+
+The Packet Tracer project is explained in [Packet-Tracer.md](packet-tracer.md).
 
 ---
