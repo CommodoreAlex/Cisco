@@ -59,6 +59,10 @@ The network will consist of:
 
 ![1](https://github.com/user-attachments/assets/fe295ed6-dadf-4327-ae76-3af889366b56)
 
+Change the display names of the devices by clicking on them and navigating to the 'Config' tab:
+![3](https://github.com/user-attachments/assets/53b01974-f53d-4e94-9757-9ad1b10f4bd3)
+
+
 ### Connecting the Devices:
 
 **Router to Switches**:
