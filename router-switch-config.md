@@ -197,7 +197,7 @@ show ip ssh
 
 To disable Telnet on a switch or router in Packet Tracer, you can follow these steps:
 
-### 3.0 Disabling Telnet Access
+### 2.6 Disabling Telnet Access
 
 Enter global configuration mode:
 ```bash
