@@ -66,7 +66,7 @@ The network will consist of:
 - This allows the router to handle inter-VLAN routing between the two VLANs.
 
 **Switches to PCs**:
-- Connect each PC to the corresponding switch using **Ethernet cables**. For **Switch 1** (Finance VLAN), connect PCs (e.g., PC1 and PC2) to available ports on the switch (typically ports `fa0/1` to `fa0/24`). For **Switch 2** (HR VLAN), connect PCs (e.g., PC3 and PC4) to Switch 2 in the same manner.
+- Connect each PC to the corresponding switch using **Ethernet cables** (copper-straight through). For **Switch 1** (Finance VLAN), connect PCs (e.g., PC1 and PC2) to available ports on the switch (typically ports `fa0/1` to `fa0/24`). For **Switch 2** (HR VLAN), connect PCs (e.g., PC3 and PC4) to Switch 2 in the same manner.
 - Ensure that each switch port is configured to the appropriate VLAN (as shown in Step 2).
 
 **PC to Router for Management** (optional):
