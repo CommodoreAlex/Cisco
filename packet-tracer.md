@@ -202,8 +202,6 @@ exit
 
 ## Step 6: Network Security
 
-## Step 6: Network Security
-
 ### Enabling Password Protection and User Accounts
 
 To improve the security of your network devices, it's essential to secure access with passwords and user accounts.
