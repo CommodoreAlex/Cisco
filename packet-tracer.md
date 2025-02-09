@@ -202,22 +202,119 @@ exit
 
 ## Step 6: Network Security
 
-### Enable SSH for Secure Management
+## Step 6: Network Security
 
-Configure the router to use SSH for remote management:
+### Enabling Password Protection and User Accounts
+
+To improve the security of your network devices, it's essential to secure access with passwords and user accounts.
+
+#### 1. **Configure Console and VTY Passwords**
+
+Set up a strong password for console and VTY access (used for remote management). This prevents unauthorized access to the router and switches.
+
+**On the Router**:
+```bash
+enable
+configure terminal
+line con 0
+password cisco123
+login
+exit
+line vty 0 4
+password cisco123
+login
+exit
+```
+
+**On the Switches**:
+```bash
+enable
+configure terminal
+line con 0
+password cisco123
+login
+exit
+line vty 0 4
+password cisco123
+login
+exit
+```
+
+#### 2. **Create a User Account with Privileges**
+
+Creating a user account with specific privileges adds another layer of security. We'll create an account with the highest privilege (level 15) for administrative access.
+
+**On the Router**:
+```bash
+enable
+configure terminal
+username admin privilege 15 secret mysecurepassword
+exit
+```
+
+**On the Switches**:
+```bash
+enable
+configure terminal
+username admin privilege 15 secret mysecurepassword
+exit
+```
+
+### Disabling Telnet and Enabling SSH for Secure Remote Access
+
+Telnet is not secure because it transmits data (including passwords) in plaintext. To secure remote access, disable Telnet and enable SSH.
+
+#### 1. **Disable Telnet**
+
+Prevent Telnet access to the router and switches by disabling the Telnet service on the VTY lines.
+
+**On the Router**:
+```bash
+enable
+configure terminal
+line vty 0 4
+transport input ssh
+exit
+```
+
+**On the Switches**:
+```bash
+enable
+configure terminal
+line vty 0 4
+transport input ssh
+exit
+```
+
+#### 2. **Enable SSH for Remote Access**
+
+SSH provides secure management of your network devices. To configure SSH, generate RSA keys and configure the router and switch for SSH access.
+
+**On the Router**:
 ```bash
 enable
 configure terminal
 ip domain-name mynetwork.com
 crypto key generate rsa
-username admin privilege 15 secret mypassword
+username admin privilege 15 secret mysecurepassword
 line vty 0 4
 transport input ssh
 login local
 exit
 ```
 
-Configure the switches to only allow SSH for management access.
+**On the Switches**:
+```bash
+enable
+configure terminal
+ip domain-name mynetwork.com
+crypto key generate rsa
+username admin privilege 15 secret mysecurepassword
+line vty 0 4
+transport input ssh
+login local
+exit
+```
 
 ---
 
